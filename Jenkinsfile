@@ -1,5 +1,5 @@
 node {
-  registry = "gorkov/app"
+  // registry = "gorkov/app"
   stage ('Cloning Git'){
     git branch: 'main', credentialsId: 'github', url: 'git@github.com:DarkGarik/myapp.git'
   }
