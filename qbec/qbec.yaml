@@ -9,5 +9,5 @@ spec:
       server: https://51.250.14.246:6443
   vars:
     external:
-      - name: tag
+      - name: mytag
         default: latest
