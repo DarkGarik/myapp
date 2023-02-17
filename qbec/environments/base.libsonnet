@@ -4,7 +4,6 @@ local imageTag = std.extVar('tag');
   "app": {
     "image": {
       "repository": "gorkov/app:"+imageTag,
-      "tag": "latest",
       "imagePullPolicy": "Always"
     }
   }    
