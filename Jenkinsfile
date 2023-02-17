@@ -19,6 +19,7 @@ node {
   stage ('deploy'){
     if (env.TAG_NAME) {
       dir("qbec") {
+        sh "qbec delete default"
         sh "qbec apply default --vm:ext-str tag=$tag --yes"
       }
     }
