@@ -1,7 +1,7 @@
 node {
   registry = "gorkov/app"
   stage ('Clone'){
-    git branch: 'master', credentialsId: 'github', url: 'git@github.com:DarkGarik/myapp.git'
+    git branch: 'master', credentialsId: 'jenkins', url: 'git@github.com:DarkGarik/myapp.git'
   }
   stage ('build'){
     if (env.TAG_NAME) {
